@@ -4,6 +4,14 @@
 target 'iOS Architecture' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  
+  pod 'XCoordinator'
+  
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'Action'
+  pod 'Moya/RxSwift'
 
   # Pods for iOS Architecture
 
