@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		051F1958A84197BCD87B3CFF /* Pods_iOS_ArchitectureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682E5F7A1130286E6B95AAB8 /* Pods_iOS_ArchitectureTests.framework */; };
+		0943150B24325385009A0ABC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943150924325385009A0ABC /* FeedViewController.swift */; };
+		0943150C24325385009A0ABC /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0943150A24325385009A0ABC /* FeedViewController.xib */; };
+		0943150E2432547B009A0ABC /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943150D2432547B009A0ABC /* FeedViewModel.swift */; };
+		09431510243254B9009A0ABC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943150F243254B9009A0ABC /* AppCoordinator.swift */; };
+		0943151224325582009A0ABC /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943151124325582009A0ABC /* FeedCoordinator.swift */; };
 		09EDCDCE2431641E00B9EA4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDCDCD2431641E00B9EA4E /* AppDelegate.swift */; };
 		09EDCDD02431641E00B9EA4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDCDCF2431641E00B9EA4E /* SceneDelegate.swift */; };
-		09EDCDD22431641E00B9EA4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDCDD12431641E00B9EA4E /* ViewController.swift */; };
 		09EDCDD72431642000B9EA4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09EDCDD62431642000B9EA4E /* Assets.xcassets */; };
 		09EDCDDA2431642000B9EA4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EDCDD82431642000B9EA4E /* LaunchScreen.storyboard */; };
 		09EDCDE52431642000B9EA4E /* iOS_ArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDCDE42431642000B9EA4E /* iOS_ArchitectureTests.swift */; };
@@ -41,10 +45,14 @@
 
 /* Begin PBXFileReference section */
 		029EC9651783A6E7C3375050 /* Pods-iOS Architecture-iOS ArchitectureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Architecture-iOS ArchitectureUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOS Architecture-iOS ArchitectureUITests/Pods-iOS Architecture-iOS ArchitectureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0943150924325385009A0ABC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		0943150A24325385009A0ABC /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		0943150D2432547B009A0ABC /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		0943150F243254B9009A0ABC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0943151124325582009A0ABC /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
 		09EDCDCA2431641E00B9EA4E /* iOS Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EDCDCD2431641E00B9EA4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09EDCDCF2431641E00B9EA4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09EDCDD12431641E00B9EA4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		09EDCDD62431642000B9EA4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09EDCDD92431642000B9EA4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09EDCDDB2431642000B9EA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +103,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0943150824325048009A0ABC /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				0943150924325385009A0ABC /* FeedViewController.swift */,
+				0943150A24325385009A0ABC /* FeedViewController.xib */,
+				0943150D2432547B009A0ABC /* FeedViewModel.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		09EDCDC12431641E00B9EA4E = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +146,6 @@
 				09EDCE02243169F800B9EA4E /* Views */,
 				09EDCE01243169F200B9EA4E /* Utils */,
 				09EDCE0324316A2000B9EA4E /* Extensions */,
-				09EDCDD12431641E00B9EA4E /* ViewController.swift */,
 				09EDCDD62431642000B9EA4E /* Assets.xcassets */,
 				09EDCDD82431642000B9EA4E /* LaunchScreen.storyboard */,
 				09EDCDDB2431642000B9EA4E /* Info.plist */,
@@ -157,6 +174,8 @@
 		09EDCDFD243168A200B9EA4E /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				0943150F243254B9009A0ABC /* AppCoordinator.swift */,
+				0943151124325582009A0ABC /* FeedCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -173,6 +192,7 @@
 		09EDCDFF243168FB00B9EA4E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0943150824325048009A0ABC /* Feed */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -348,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09EDCDDA2431642000B9EA4E /* LaunchScreen.storyboard in Resources */,
+				0943150C24325385009A0ABC /* FeedViewController.xib in Resources */,
 				09EDCDD72431642000B9EA4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,11 +497,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0943150E2432547B009A0ABC /* FeedViewModel.swift in Sources */,
 				09EDCE0624316B4000B9EA4E /* Router+Rx.swift in Sources */,
-				09EDCDD22431641E00B9EA4E /* ViewController.swift in Sources */,
 				09EDCDCE2431641E00B9EA4E /* AppDelegate.swift in Sources */,
 				09EDCE0A24316BCD00B9EA4E /* NibIdentifiable.swift in Sources */,
+				09431510243254B9009A0ABC /* AppCoordinator.swift in Sources */,
 				09EDCDD02431641E00B9EA4E /* SceneDelegate.swift in Sources */,
+				0943150B24325385009A0ABC /* FeedViewController.swift in Sources */,
+				0943151224325582009A0ABC /* FeedCoordinator.swift in Sources */,
 				09EDCE0824316B9A00B9EA4E /* BindableType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,7 +681,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "la.mastery.iOS-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -676,7 +700,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "la.mastery.iOS-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
